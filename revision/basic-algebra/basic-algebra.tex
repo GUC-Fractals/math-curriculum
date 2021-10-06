@@ -13,6 +13,7 @@
 \usepackage{multicol}
 \theoremstyle{definition}
 \newtheorem{exmp}{Example}[section]
+\newtheorem{theorem}{Theorem}
 
 \begin{document}
 \author{Fractals}
@@ -62,5 +63,16 @@
         x-4 = 8, y-2=1,
     \]
     Solving we get \framebox[1.04\width]{\((x,y)\in  \{(5,10), (6,6), (8,4), (12,3)\} \).}
+    \\
+
+    \noindent
+    Now for the formal statement:
 \end{exmp}
+\begin{theorem}[\textbf{SFFT}]
+    For all real numbers (although commonly used only for integers) \(x, y, a, b, \)
+    \[
+        xy + xa + yb + ab = (x + a)(y + bk).
+    \]
+    Two special common cases are: \(xy + x + y + 1 = (x+1)(y+1)\) and \(xy - x - y + 1 = (x-1)(y-1)\).
+\end{theorem}
 \end{document}

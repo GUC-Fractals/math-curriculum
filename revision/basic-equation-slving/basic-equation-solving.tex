@@ -1,0 +1,105 @@
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{amsthm}
+\usepackage{geometry}
+\geometry{a4paper} 
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{multicol}
+\theoremstyle{definition}
+\newtheorem{exmp}{Example}[section]
+\newtheorem{theorem}{Theorem}
+
+\begin{document}
+\author{ \textbf{Fractals}}
+\title{\textbf{Basic Equation Solving}}
+\maketitle
+\tableofcontents
+\noindent
+\section{Basic Equation Solving}
+\subsection{Algebraic Manipulation}
+To introduce the topic of \textbf{algebraic manipulation},
+let us start with a little known example: \textbf{egyptian fractions}
+
+\begin{theorem}[\textbf{Egyptian Fractions}]
+    For all \(a, b \) where \(ab \ne 1 \)
+    \[
+        \dfrac{a}{ab - 1 } = \dfrac{1}{b( ab - 1)} + \dfrac{1}{b}.
+    \]
+    From here, we can see that putting things together (factoring) is just as important as taking them
+    apart (distributing). Now, let us turn the power of products:
+\end{theorem}
+\begin{exmp}
+    For positive real numbers \(a, b \),
+    \[
+        a + \dfrac{1}{b} = 4,
+    \]
+    \[
+        b + \dfrac{1}{a} = 5,
+    \]
+    Find \(ab + \dfrac{1}{ab} \). \\
+
+    \noindent
+    \(Solution\). It is very easy to get lost in the problem if we directly try to solve for a and b. Instead,
+    let us multiply the equations:
+    \[
+        (a+\dfrac{1}{b})(b+\dfrac{1}{a}) = 4(5) = 20.
+    \]
+    \[
+        ab + \dfrac{a}{a} + \dfrac{b}{b} + \dfrac{1}{ab} = ab + \dfrac{1}{ab} + 2 = 20,
+    \]
+    \begin{center}
+        \framebox[1\width]{ \( ab + \dfrac{1}{ab} = 18\). }
+    \end{center}
+\end{exmp}
+\begin{theorem}
+    Let \(x, y \) be nonzero real numbers such that \(x + y = a\) and \(xy = b\) Then,
+    \[
+        x^2 + y^2 = a^2 -2b,
+    \]
+    \[
+        (x+1)(y+1) = a + b + 1,
+    \]
+    \[
+        x^2 + xy^2 = ab,
+    \]
+    \[
+        | x - y | = \sqrt{a^2 - 4b},
+    \]
+    \[
+        x^3 + y^3 = a^3 - 3ab,
+    \]
+    \[
+        \dfrac{1}{x} + \dfrac{1}{y} = \dfrac{a}{b},
+    \]
+\end{theorem}
+\subsection{Quadratic Equations}
+A polynomial is an equation of the following form:
+\[
+    a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0 ,
+\]
+where
+\[
+    a_0, a_1, \dots, a_n
+\]
+are constants. A quadratic equation is a polynoimal with \(n = 2\):
+\[
+    ax^2 + bx + c = 0,
+\]
+A common way to solve a quadratic equation is to use the quadratic formula:
+\begin{theorem}[\textbf{Quadratic Formula}]
+    For the equation \(ax^2 + bx + c = 0\), the roots \(x_1, x_2 \) must be equal to
+    \[
+        x_1 = \dfrac{-b + \sqrt{b^2 - 4ac}}{2a},
+    \]
+    \[
+        x_2 = \dfrac{-b - \sqrt{b^2 - 4ac}}{2a},
+    \]
+\end{theorem}
+
+\end{document}
