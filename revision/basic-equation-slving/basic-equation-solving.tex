@@ -14,6 +14,7 @@
 \theoremstyle{definition}
 \newtheorem{exmp}{Example}[section]
 \newtheorem{theorem}{Theorem}
+\newtheorem{problem}{Problem}
 
 \begin{document}
 \author{ \textbf{Fractals}}
@@ -126,10 +127,61 @@ A common way to solve a quadratic equation is to use the quadratic formula:
     \[
         a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0 ,
     \]
-    \begin{displaymath}
 
-    \end{displaymath}
+    \textbf{The sum of roots is}: \( - \dfrac{\text{seconed coeffeicent}}{\text{first coeffeicent}}
+    = - \dfrac{a_{n-1}}{a_n}\)
+    and \textbf{the product of roots is:} \(\dfrac{\text{last coeffeicent}}{\text{first coeffeicent}}
+    = \dfrac{a_0}{a_n} \) \\
 
+    \noindent
+    For those who are looking for a more advanced and more powerful theorem, we can generalize
+    this formula:
 \end{theorem}
+
+\begin{theorem}[\textbf{Vieta’s Formulas}]
+    for any polynoimal
+    \[
+        a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0 ,
+    \]
+    let \(r_1, r_2, \dots r_n\) (an \(n\)-degree equation has n different roots).
+    Vieta’s formulas state that
+    \[
+        a_n = a_n
+    \]
+    \[
+        a_{n-1} = -a_n(r_1 + r_2 + \cdots + r_n)
+    \]
+    \[
+        a_{n-2} = a_n(r_1r_2+r_1r_3+\cdots + r_{n-1}r_n)
+    \]
+    \[
+        \vdots
+    \]
+    \[
+        a_0 = (-1)^n a_n(r_1r_2\cdots r_n)
+    \]
+\end{theorem}
+
+\section{Problems}
+\begin{problem}
+Let \(x\) be a real number such that \(x+\dfrac{1}{x} = \sqrt{2020}\).
+What is \(x^2 + \dfrac{1}{x^2}\)?
+\end{problem}
+\begin{problem}
+Two non-zero real numbers, a and b, satisfy \(ab = a - b\).
+Which of the following is a possible value of \(\dfrac{a}{b}
++ \dfrac{b}{a} -ab \)?
+\end{problem}
+\begin{problem}
+Let \(x, y\) be nonnegative real numbers such that \(x + y = 5\) and \(xy = 7\). Find
+\(\dfrac{x}{y-1} +\dfrac{y}{p-1}\)
+\end{problem}
+\begin{problem}
+Let \(a, b\) are real numbers such that
+\[
+    \dfrac{1}{a(b+1)} + \dfrac{1}{b(a+1)} = \dfrac{1}{(a+1)(b+1)}.
+\]
+
+\end{problem}
 
 \end{document}
