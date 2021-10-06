@@ -1,0 +1,66 @@
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{amsthm}
+\usepackage{geometry}
+\geometry{a4paper} 
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{multicol}
+\theoremstyle{definition}
+\newtheorem{exmp}{Example}[section]
+
+\begin{document}
+\author{Fractals}
+\title{\textbf{}}
+\maketitle
+\tableofcontents
+\noindent
+\section{Basic Algebra}
+\subsection{Simon's Factroring Trick}
+\textbf{Simon’s Favorite Factoring Trick} (SFFT) is best explained with an example:
+\begin{exmp}
+    Find all positive integers \(x, y\) that satisfy
+    \[
+        xy- 2x - 4y = 0.
+    \]
+    \(Sloution\) Let us factor the first two terms:
+    \[
+        x(y-2) - 4y = 0.
+    \]
+    We want to find some way we can turn the \(y\) into a \(y - 2\). Let’s see what
+    happens if we do that:
+    \[
+        x(y-2) - 4(y-2+2) = 0.
+    \]
+    \[
+        x(y-2) - 4(y-2)  - 8= 0.
+    \]
+    \[
+        x(y-2) - 4(y-2) = 8.
+    \]
+    Now, we can factor:
+    \[
+        (x-4)(y-2) = 8.
+    \]
+    Because \(x, y\) are positive integers,
+    we know that \(x - 4 \text{ and } y - 2\) are simply the positive factors of 8
+    \[
+        x-4 = 1, y-2=8,
+    \]
+    \[
+        x-4 = 2, y-2=4,
+    \]
+    \[
+        x-4 = 4, y-2=2,
+    \]
+    \[
+        x-4 = 8, y-2=1,
+    \]
+    Solving we get \framebox[1.04\width]{\((x,y)\in  \{(5,10), (6,6), (8,4), (12,3)\} \).}
+\end{exmp}
+\end{document}
