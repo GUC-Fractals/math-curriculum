@@ -71,10 +71,71 @@ so the range is \framebox[\width]{ \(0 \le y \le 4\) }
 
 \end{theorem}
 
-
+\begin{exmp}
+    if \(f(x) = 2x + 3\) and \(\quad g(x) = 2x - 3\), then what is \(fg(4)\)?
+\end{exmp}
+\(sloution\) \( (fg)(x) = (2x+3)(2x-3) \) Thus \((fg)(4) = 55\).
 \subsection{Domain and Range of a Composite Function}
+The domain of a composite function is the intersection of domains of the starting
+and final function.
+
+\noindent
+The range of a composite function is the range of the final function restricted by the
+starting function.
+
+\begin{exmp}
+    let \(f(x) = \dfrac{1}{x+2}\) and \( \dfrac{x}{x-3} \).
+    Then \(g(x)\) is the starting function and \( f(g(x)) \) is the final
+    function. Find the domain and range of \(f(g(x))\).
+\end{exmp}
+
+\noindent
+\(sloution\) \(f(g(x)) = \dfrac{1}{\dfrac{x}{x-3} + 2}\) so \(x \ne 3\),
+impleing the domain is \framebox[\width]{ \(x \ne 2,3\) }.
+
+\begin{exmp}
+    If \(f(x) = \sqrt{x}\) and \(g(x) = x - 1\), what is the domain and range
+    of \((g\circ f)(x)\)?
+\end{exmp}
+\noindent
+\(sloution\) \((g\circ f)(x) = \sqrt{x} - 1\) it's obivious that \(x \ge 0\),
+and all other values work, so the domain is \framebox[\width]{ \(0 \le x < \infty \ \)}
+. Since \( \sqrt{x} \ge 0\)we have \((g\circ f)(x) \ge -1\), with no other restrictions,
+so the range is \framebox[\width]{ \([-1,\infty] \) }.
+
 \section{Types of Functions}
 \subsection{Piecewise-Defined Function}
+A piecewise function is a function that is defined by two or more equations over a
+specified domain.
+
+\begin{exmp}
+    let \(f(x) = |x|\) Then
+    \[ f(x) =
+        \begin{cases}
+            x  & \text{if } x \ge 0 \\
+            -x & \text{if } x < 0
+        \end{cases}
+    \]
+
+\end{exmp}
+
+\begin{exmp}
+    What are the domain and range of the piecewise function as follows?
+    \[
+        f(x) =
+        \begin{cases}
+            x^2 + 1 & x < 0   \\
+            x - 1   & x \ge 0
+        \end{cases}
+    \]
+\end{exmp}
+
+\(sloution\). The domain includes \(x < 0 \) and \(x \ge 0\),
+which is all values, so the domain is
+\framebox[\width]{ \((-\infty, \infty)\) }. for \(x \ge 0\), we have \(f(x) = x - 1\),
+so the range is \(y \ge -1\). For \(x < 0\) we have \(f(x) = x^2 + 1\), so the range is \(y > 1\).
+Thus the range together is \framebox[\width]{ \([-1, \infty )\) }
+
 \section{Properties of Functions}
 \subsection{Odd and Even Functions}
 \subsection{Periodic Functions}
