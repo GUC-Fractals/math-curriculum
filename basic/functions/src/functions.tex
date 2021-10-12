@@ -11,6 +11,7 @@
 \usepackage{xcolor}
 \usepackage{amssymb}
 \usepackage{multicol}
+\usepackage{float}
 \theoremstyle{definition}
 \newtheorem{definition}{Defintion}[section]
 \newtheorem{exmp}{Example}[section]
@@ -141,20 +142,98 @@ Thus the range together is \framebox[\width]{ \([-1, \infty )\) }
 A function \(f\) is even if \(f(x) = f(-x)\)
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \begin{small}
         \begin{center}
-            \includegraphics[width=0.75\textwidth]{../out/graphs.png}
+            \includegraphics[width=0.75\textwidth]{../out/even.png}
         \end{center}
         \caption{Graph of an even function.}
         \label{fig: Even Function}
     \end{small}
 \end{figure}
 
-% \begin{center}
-%     \includegraphics[width = 8cm]{../out/graphs.png}
-% \end{center}
-\subsection{Periodic Functions}
+\pagebreak
+A function \(f\) is odd if \(f(x) = - f(-x)\)
+
+\begin{figure}[H]
+    \begin{small}
+        \begin{center}
+            \includegraphics[width=0.75 \textwidth]{../out/odd.png}
+        \end{center}
+        \caption{Graph of an odd function.}
+        \label{fig: Odd Function}
+
+    \end{small}
+\end{figure}
+
+Note that
+\begin{itemize}
+    \item Reflecting an even function across the y-axis yields the same function, and
+    \item Rotating an odd function across the x-axis also yields the same function.
+\end{itemize}
+
+\begin{theorem}[Parity of Functions Comes From Its Components]
+    if \(h(x) = f(x) + g(x)\)then
+    \(h(x)\) is even if \(f(x)\) and \(g(x)\) are both even,
+    and \(h(x)\) is odd if \(f(x)\) and \(g(x)\) are both odd.
+\end{theorem}
+
+\begin{exmp}
+    Is \(f(x) = x^3 - 2x\) odd, even, neither?  \\
+
+    \(sloution\) Note thr \(f(-x) = -x^3 + 2x = -f(x)\) implying it's odd.
+\end{exmp}
+
 \section{Inverse Functions}
+An inverse function is a function that reverses function \(f\).
+If \(f\) is a function mapping \(x\) to \(y\),
+then the inverse function of \(f\) maps \(y\) back to x. The
+inverse function of f is usually denoted by \(f^{-1}\)
+
+\begin{itemize}
+    \item If \(f^{-1}\) exists, Then \(f^{-1}(f(x)) = f(f^{-1}(x)) = x\).
+    \item The graph of the inverse is the graph of the function reflected across
+          \(y = x\).2
+\end{itemize}
+
+
+\begin{exmp}
+    what's the inverse function of \(f(x) = \dfrac{3x-5}{2}? \)
+    \\
+
+    \(sloution\) if we switch \(x\) and \(y\) we get \(x = \dfrac{3y-5}{2}
+    \Rightarrow \) \framebox[1.1\width]{\(f^{-1}(x) = \dfrac{2x+5}{3}\)}.
+\end{exmp}
 \subsection{Existence of an Inverse Function}
+\begin{definition}[One to one]
+    If a function satisfies the property that each x-value corresponds to one y-value, and
+    each y-value corresponds to one x-value, then the function is one-to-one.
+\end{definition}
+\begin{theorem}[Inverse Function Criterion]
+    If a function \(f\) is one-to-one, then its inverse is a function. More specifically, f is
+    one-to-one if \(f\) is increasing/decreasing on its entire domain
+\end{theorem}
+\begin{theorem}[Horizontal Line Test]
+    If you can draw a horizontal line passing through more than one point of a function
+    on a graph, its inverse is not a function. If you cannot, it is a function.
+\end{theorem}
+This makes a lot of sense, since the graph of the inverse is just the function flipped
+across the \(y = x\) line. This also makes it a lot easier to draw graphs.
+
+\begin{exmp}
+    Does the function \(f(x) = \sqrt{x-2} + 3\) have an inverse function?
+
+    \begin{figure}[H]
+        \begin{small}
+            \begin{center}
+                \includegraphics[width=0.75 \textwidth]{../out/inverse.png}
+            \end{center}
+            \caption{Graph of square root function.}
+            \label{fig: invetable Function}
+
+        \end{small}
+    \end{figure}
+\end{exmp}
+\section{problmes}
+TO BE ADDED 
 \end{document}
