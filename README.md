@@ -12,4 +12,4 @@ Here're some Basic topics thar are prequestites make sure to revise them well.
 
 [Solving Equations](Revision/basic-equaotion-sloving/basic-equation-solving.pdf).
 
-[Funtions](Revision/functions/out/functions.pdf).
+[Functions](Revision/functions/out/functions.pdf).
