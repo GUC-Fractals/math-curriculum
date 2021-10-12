@@ -8,8 +8,8 @@ This is still on progress, So we need your contribution By :
 ## Introduction 
 Here're some Basic topics thar are prequestites make sure to revise them well.
 
-[Basic algebra](Revision/basic-algebra/basic-algebra.pdf).
+[Basic algebra](basic/basic-algebra/basic-algebra.pdf).
 
-[Solving Equations](Revision/basic-equaotion-sloving/basic-equation-solving.pdf).
+[Solving Equations](basic/basic-equation-sloving/basic-equation-solving.pdf).
 
-[Functions](Revision/functions/out/functions.pdf).
+[Functions](basic/functions/out/functions.pdf).
